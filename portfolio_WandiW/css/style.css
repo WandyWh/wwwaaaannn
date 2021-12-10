@@ -1,0 +1,254 @@
+*{
+       font-family: 'Gemunu Libre', sans-serif;
+       padding:0;
+       margin:0;
+       color:black;
+}
+/* bagian header */
+header{
+    height:70px;
+    width: 100%;
+    background-color:#8a0329;
+}
+header h1 {
+	   display:inline-block;
+	   float:left;
+	   padding:15px 24px;
+	   text-transform:uppercase;
+}
+header h1 a:hover{
+   color:#cca22d;
+}
+header h1 a{
+  transition: .4s;
+}
+header ul a:hover{
+  color:#74b887;
+}
+header ul a{
+  transition: .8s;
+}
+header ul{
+	   float:right;
+}
+header ul li {
+	display:inline-block;
+	padding:20px; 
+}
+a{
+  text-decoration: none;
+}
+.container{
+  width:90%;
+  margin:0 auto;
+}
+.container::after{
+  content:'';
+  display: none;
+  clear:both;
+}
+.menu-sidebar{
+float: right;
+display:none;
+padding:15px;
+}
+@media (max-width: 768px){
+  .menu-sidebar{
+    display:block;
+}
+header ul{
+    display:none;
+}
+.col-4{
+    width: 50%;
+}
+.col-3{
+    width:100%;
+   }
+}
+/* bagian sidebar */
+.sidebar{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left:-200px;
+  width:200px;
+  background-color: rgba(22, 36, 56, .8);
+  transition: .3s;
+  z-index: 9999;
+}
+.sidebar ul li a{
+  color:#fff;
+}
+.sidebar ul li{
+  padding:25px;
+  transition: .3s;
+  transition-property: background-color;
+}
+.sidebar ul li:hover{
+  background-color: #8ac0de;
+}
+#bar:checked~ .sidebar{
+  left:0;
+}
+#bar {
+  display:none;
+}
+/*bagian banner */
+.banner {
+  background: linear-gradient(to top,#636263 50%,#ffffff 100%);
+  padding:150px 0;
+}
+.banner img{
+  width: 150px;
+  border-radius:60%;
+  margin-bottom:10px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0,2),0 6px 20px 0 rgba(0,0,0,0,20)
+}
+.b-center{
+  text-align: center;
+}
+.banner h2,
+.banner p,
+.banner span {
+     color: #fff;
+}
+.banner h2{
+     margin-bottom: 10px;
+}
+.banner p{
+     font-size: 18px;
+}
+section{
+     padding:50px 0;
+}
+section h3{
+     padding-bottom: 20px;
+     text-align: center;
+     margin: 20px;
+     position: relative;
+}
+section h3::before{
+     content: '';
+     display: block;
+     position: absolute;
+     bottom: 0px;
+     width: 120px;
+     height: 1px;
+     background-color:#ddd ;
+     left:calc(50% - 60px);
+
+}
+section h3::after{
+     content: '';
+     display: block;
+     position: absolute;
+     bottom: -1px;
+     width: 40px;
+     height: 4px;
+     background-color: #74b887;
+     left:calc(50% - 20px);
+
+}
+/*bagian about*/
+#about p{
+     text-align: center;
+     text-indent: 30px;
+     line-height: 25px;
+     margin-bottom: 15px;
+}
+/*bagian skills*/
+#skills{
+     background-color: #8a0329;
+}
+#skills .l-skills{
+     height: 30px;
+     background-color: #fff;
+     border:1px solid #ddd;
+     margin: 5px 0 20px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0,2),0 6px 20px 0 rgba(0,0,0,0,20);
+}
+.l-skills{
+     border-radius: 40px;     
+}
+.l-skills .nilai {
+     height: 30px;
+     background-color: #636263;
+     display: inline-block;
+     color: #fff;
+     text-align: center;
+     width: 10%;
+     transition: width 2s;
+     border-radius: 40px; 
+}
+.kes:hover {
+  width: 90%;
+}
+.rng:hover {
+  width: 80%;
+}
+.mb:hover {
+  width: 85%;
+}
+.gm:hover {
+  width: 87%;
+}
+
+/* bagian portfolio */
+.col-4{
+  width: 25%;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  float: left;
+  text-align : center;
+  margin-bottom: 25px;
+}
+.col-4 img{
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 9px 10px 0 rgba(0,0,0,0,2), 0 6px 20px 0 rgba(0,0,0,0,20);
+}
+.col-4 a:hover img{
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+
+/* bagian contact */
+#contact {
+  background-color: #636263;
+  color: white;
+}
+
+.col-3 {
+  width: 33.33%;
+  box-sizing: border-box;
+  padding:5px;
+  float: left;
+  text-align:center;
+  margin-bottom: 15px
+}
+
+
+.col-3 h4 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+/* bagian footer */
+footer {
+  background-color:#8a0329;
+  padding: 50px;
+    text-align: center;
+}
+footer small{
+  color :; 
+  font: black;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: ;
+
+} 
